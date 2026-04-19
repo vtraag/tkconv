@@ -31,3 +31,11 @@
 *.out
 *.app
 *~
+
+# Results
+docs
+*.sqlite3*
+
+subprojects/
+op/
+photos/
