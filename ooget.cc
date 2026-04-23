@@ -246,9 +246,9 @@ int main(int argc, char** argv)
 
   sqlw.queryT("CREATE table if not exists OOEntry (id TEXT, mutatiedatumtijd TEXT)");
   sqlw.queryT("CREATE unique index if not exists OOEntryUnique on OOEntry(id)");
-  
 
-  sqlw.queryT("CREATE table if not exists OODocument (id TEXT NOT NULL REFERENCES OOEntry(id) ON DELETE CASCADE)");
+
+  sqlw.queryT("CREATE table if not exists OODocument (id TEXT NOT NULL REFERENCES OOEntry(id) ON DELETE CASCADE, titel TEXT, omschrijving TEXT, openbaarmakingsdatum TEXT, mutatiedatumtijd TEXT, publisher TEXT, aanbieder TEXT, bestandsType TEXT, documentJson TEXT) STRICT");
   sqlw.queryT("CREATE unique index if not exists OODocumentUnique on OODocument(id)");
   
   int numresultaten=50;
