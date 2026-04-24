@@ -1,0 +1,9 @@
+name: tkconv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - jupyter=1.1.1
+  - pandas=3.0.1
+  - spacy=3.8.11
+  - tqdm=4.67.3
