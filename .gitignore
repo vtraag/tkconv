@@ -34,7 +34,7 @@
 
 # Results
 docs
-*.sqlite3*
+*.sqlite*
 
 subprojects/
 op/
